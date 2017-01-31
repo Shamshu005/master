@@ -10,16 +10,17 @@ var db = mongojs('mongodb://localhost:27017/mydb')
 
 //var db = mongojs('http://localhost:27017/mydb', ['collection']);
 app.get('/', function(req, res) {
-    var obj = {
-        "aa": "aa"
-    };
-    db.collection('mycollection').insert(obj, function(err, result) {
-        if (err)
-           console.log(err);
-        else if(result!=''){
-            res.send('<h1 style="color:green">Hello World!'+JSON.stringify(result)+'</h1>');
-        }
-    });
+  res.send("hhhhhhhhhhhh");
+    // var obj = {
+    //     "aa": "aa"
+    // };
+    // db.collection('mycollection').insert(obj, function(err, result) {
+    //     if (err)
+    //        console.log(err);
+    //     else if(result!=''){
+    //         res.send('<h1 style="color:green">Hello World!'+JSON.stringify(result)+'</h1>');
+    //     }
+    // });
 })
 
 // app.listen(3000, function() {
