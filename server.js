@@ -23,7 +23,7 @@ app.get('/', function(req, res) {
     // });
 });
 app.get('/welcome', function(req, res) {
-  res.send("<h1 style="color:green">welcome to heroku app</h1>");
+  res.send("<h1 style='color:green'>welcome to heroku app</h1>");
     // var obj = {
     //     "aa": "aa"
     // };
