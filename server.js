@@ -10,7 +10,7 @@ var db = mongojs('mongodb://localhost:27017/mydb')
 
 //var db = mongojs('http://localhost:27017/mydb', ['collection']);
 app.get('/', function(req, res) {
-  res.send("hhhhhhhhhhhh");
+  res.send("h");
     // var obj = {
     //     "aa": "aa"
     // };
@@ -27,5 +27,5 @@ app.get('/', function(req, res) {
 //     console.log('Example app listening on port 3000!');
 // })
 app.listen(process.env.PORT || 3000, function(){
-  console.log('listening on', http.address().port);
+  console.log('listening on', app.address().port);
 });
