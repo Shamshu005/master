@@ -10,17 +10,17 @@ app.use(function(req, res, next) {
 
 var db = mongojs('mongodb://shamshu005:Shamshu5830!@ds137759.mlab.com');
 app.get('/', function(req, res) {
-  res.send(db);
-    // var obj = {
-    //     "aa": "aa"
-    // };
-    // db.collection('mycollection').insert(obj, function(err, result) {
-    //     if (err)
-    //        console.log(err);
-    //     else if(result!=''){
-    //         res.send('<h1 style="color:green">Hello World!'+JSON.stringify(result)+'</h1>');
-    //     }
-    // });
+//  res.send(db);
+    var obj = {
+        "aa": "aa"
+    };
+    db.collection('ssss').insert(obj, function(err, result) {
+        if (err)
+           console.log(err);
+        else if(result!=''){
+            res.send('<h1 style="color:green">Hello World!'+JSON.stringify(result)+'</h1>');
+        }
+    });
 });
 app.get('/welcome', function(req, res) {
   res.send("<h1 style='color:green'>welcome to heroku app</h1>");
