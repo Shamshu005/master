@@ -6,11 +6,11 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
-var db = mongojs('mongodb://localhost:27017/mydb')
+//var db = mongojs('mongodb://localhost:27017/mydb')
 
-//var db = mongojs('http://localhost:27017/mydb', ['collection']);
+var db = mongojs('mongodb://shamshu005:Shamshu5830!@ds137759.mlab.com');
 app.get('/', function(req, res) {
-  res.send("hxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+  res.send(db);
     // var obj = {
     //     "aa": "aa"
     // };
