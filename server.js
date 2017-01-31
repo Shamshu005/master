@@ -8,7 +8,7 @@ app.use(function(req, res, next) {
 });
 //var db = mongojs('mongodb://localhost:27017/mydb')
 
-var db = mongojs('mongodb://shamshu005:Shamshu5830!@ds137759.mlab.com');
+var db = mongojs('mongodb://shamshu:12345@ds137759.mlab.com');
 app.get('/', function(req, res) {
 //  res.send(db);
     var obj = {
