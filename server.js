@@ -21,8 +21,20 @@ app.get('/', function(req, res) {
     //         res.send('<h1 style="color:green">Hello World!'+JSON.stringify(result)+'</h1>');
     //     }
     // });
-})
-
+});
+app.get('/welcome', function(req, res) {
+  res.send("<h1 style="color:green">welcome</h1>");
+    // var obj = {
+    //     "aa": "aa"
+    // };
+    // db.collection('mycollection').insert(obj, function(err, result) {
+    //     if (err)
+    //        console.log(err);
+    //     else if(result!=''){
+    //         res.send('<h1 style="color:green">Hello World!'+JSON.stringify(result)+'</h1>');
+    //     }
+    // });
+});
 // app.listen(3000, function() {
 //     console.log('Example app listening on port 3000!');
 // })
